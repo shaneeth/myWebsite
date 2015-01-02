@@ -1,3 +1,104 @@
-.test {
-    background-color: forestgreen;
+@color-white: #FFFFFF;
+@color-lite-1: #F4F4F4;
+@color-lite-2: #E9E9E9;
+@color-lite-3: #7D7D7D;
+@color-dark-1: #10B6ED;
+@color-dark-2: #11A7DC;
+
+@font-family-1: "comic sans ms";
+@font-size-20: 20px;
+
+@import "animations";
+
+body {
+  margin: 0px;
+}
+nav.menu {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  ul {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: @color-lite-1;
+    list-style: none;
+    li {
+      padding: 0px 50px;
+      display: inline-block;
+      font-family: @font-family-1;
+      font-size: @font-size-20;
+      color: @color-lite-3;
+    }
+  }
+}
+header.top {
+  width: 100%;
+  height: 0px;
+  background-color: #11A7DC;
+  position: fixed;
+  .head-face {
+    width: 180px;
+    height: 98px;
+    margin: 0px auto;
+    position: relative;
+    .face-bg {
+      height: 30px;
+      width: 140px;
+      background-color: @color-white;
+      position: absolute;
+      top: 0px;
+      left: 25px;
+      .animation(BlogFace, 5s, infinite);
+      .eyes-wrap {
+        position: relative;
+        .eye-fun {
+          height: 13px;
+          width: 13px;
+          position: absolute;
+          background: url("../images/blogFaceEye.png")  no-repeat scroll left top / 13px auto rgba(0, 0, 0, 0);
+          position: absolute;
+        }
+        .left-eye {
+          .eye-fun;
+          top: 8px;
+          left: 24px;
+        }
+        .right-eye {
+          .eye-fun;
+          top: 8px;
+          right: 20px;
+        }
+      }
+    }
+    .blog-face {
+      background: url("../images/blogFace.png")  no-repeat scroll left top / 180px auto rgba(0, 0, 0, 0);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+#landing {
+  width: 100%;
+  height: 100%;
+  background-color: #10B6ED;
+}
+#about-me {
+
+}
+#my-works {
+
+}
+#connect-me {
+
 }

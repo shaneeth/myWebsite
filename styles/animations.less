@@ -1,0 +1,35 @@
+/*
+ *  Animations, Keyframes
+ */
+//Functions
+.animation(@name, @time, @repeat) {
+  -webkit-animation: @name @time @repeat;
+  -moz-animation: @name @time @repeat ease;
+  -o-animation: @name @time @repeat ease;
+  animation: @name @time @repeat ease;
+}
+//Blog face
+.blog-face-anim {
+  0% {
+    left: 25px;
+  }
+  10% {
+    left: 25px;
+  }
+  40% {
+    left: 15px;
+  }
+  60% {
+    left: 25px;
+  }
+  90% {
+    left: 25px;
+  }
+  100% {
+    left: 25px;
+  }
+}
+@-webkit-keyframes BlogFace {.blog-face-anim;}
+@-moz-keyframes BlogFace {.blog-face-anim;}
+@-o-keyframes BlogFace {.blog-face-anim;}
+@keyframes BlogFace {.blog-face-anim;}
