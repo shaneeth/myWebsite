@@ -67,10 +67,62 @@
         <!-- Start menu -->
         <nav class="menu">
             <ul>
-                <li>Home</li>
-                <li>About me</li>
-                <li>Works</li>
-                <li>Connect</li>
+                <li>
+                    <div class="emenu active">
+                        <div class="icon">
+                        </div>
+                        <a href="#landing">
+                            <div class="lite">
+													                Home
+                            </div>
+                            <div class="dark">
+                                Home
+                            </div>
+                        </a>
+                    </div>
+													</li>
+                <li>
+                    <div class="emenu">
+                        <div class="icon">
+                        </div>
+                        <a href="#aboutme">
+                            <div class="lite">
+													                About me
+                            </div>
+                            <div class="dark">
+                                About me
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="emenu">
+                        <div class="icon">
+                        </div>
+                        <a href="#works">
+                            <div class="lite">
+													                Works
+                            </div>
+                            <div class="dark">
+                                Works
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="emenu">
+                        <div class="icon">
+                        </div>
+                        <a href="#connect">
+                            <div class="lite">
+													                Connect
+                            </div>
+                            <div class="dark">
+                                Connect
+                            </div>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <!-- End menu -->
