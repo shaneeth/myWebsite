@@ -13,6 +13,7 @@
         <link rel="shortcut icon" href="images/myIcon.ico">
 
         <!-- Start style tags -->
+        <link rel="stylesheet" type="text/css" href="styles/external/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styles/external/magnific-popup.css">
         <link rel="stylesheet/less" type="text/css" href="styles/style.less">
         <!-- End style tags-->
@@ -27,6 +28,21 @@
         <!-- End scripts tags -->
     </head>
     <body>
+        <!-- Facebook, Twitter, Google like start-->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=145928198889712&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!-- Facebook,Twitter,Google like end-->
+
         <!-- Start header -->
         <header class="top">
             <!-- Start head face -->
@@ -88,18 +104,90 @@
                 <p class="description">
                     I'm very smart and curious about everything. However, I don't like too much noise and chaos and prefer to be alone in a quiet place. Usually I sit upstairs in a small room/ a chair and a TV and just relax and think after school as a sort of "unwinding" time. I'm funny, and I make cracks and jokes about everything, but sometimes I go too far, and I don't really notice it. I can't read people's cues and unspoken rules and whatnot, so "social norms" and "unspoken rules" and things like that are beyond me. I say what I feel about myself, a person, an event, anything and I say it out loud and proud. I don't care if people get offended by my blunt truth, because I believe that people are too sheltered from reality these days. I am constantly criticizing myself, and since I love to write and draw, I'm always editing things, always trying to achieve perfection in everything I do. This makes me a perfectionist and a procrastinator, and if I am assigned a project that says "do anything you want" I'm frozen. I need it to be narrowed down, I can't just go off and do ANYTHING. Give me some limitations, please.
                 </p>
+                <div class="hobbies">
+                    <div class="hobbies-in hobby-movie" hobby-target=".movie-desc"></div>
+                    <div class="hobbies-desc movie-desc">
+                        Hobby - Movie
+                    </div>
+                    <div class="hobbies-in hobby-travel" hobby-target=".travel-desc"></div>
+                    <div class="hobbies-desc travel-desc travel-desc-left">
+                        Travel - Movie
+                    </div>
+                    <div class="hobbies-desc travel-desc travel-desc-right">
+                        Travel - Movie - Description
+                    </div>
+                    <div class="hobbies-in hobby-think" hobby-target=".think-desc"></div>
+                    <div class="hobbies-desc think-desc">
+                        Think - Movie
+                    </div>
+                </div>
             </section>
             <!-- End about me -->
 
             <!-- Start my works -->
             <section id="my-works">
-                <a class="work-link" href="https://www.youtube.com/watch?v=uit1amuX1Oo">Desto</a>
-                <a class="work-link" href="https://www.youtube.com/watch?v=n9leuyxaK8w">CAD</a>
+                <h1 class="title">My works</h1>
+                <ul class="work-wrap">
+                    <li class="work work-odd work-link" href="https://www.youtube.com/watch?v=uit1amuX1Oo">
+                        <div class="work-vid" style="background: url('images/video-icons/1.png')  no-repeat scroll top left / 350px 150px rgba(0, 0, 0, 0);"></div>
+                        <div class="work-desc">
+                            <h2>Video 1</h2>
+                            <p>About the video 1</p>
+                        </div>
+                    </li>
+                    <li class="work work-even work-link" href="https://www.youtube.com/watch?v=n9leuyxaK8w">
+                        <div class="work-vid" style="background: url('images/video-icons/2.png')  no-repeat scroll top right / 350px 150px rgba(0, 0, 0, 0);"></div>
+                        <div class="work-desc">
+                            <h2>Video 2</h2>
+                            <p>About the video 2</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
             <!-- End my works -->
 
             <!-- Start connect me -->
-            <section id="connect-me"></section>
+            <section id="connect-me">
+                <h1 class="title">Connect me</h1>
+                <ul class="connect-ref">
+                    <li>
+                        <a href="http://www.facebook.com/shaneethmuchala">
+                            <div class="connect-icon">
+                                <i class="fa-facebook-square"></i>
+                                <div class="ext-details">
+                                    <div class="fb-like" data-href="https://www.facebook.com/shaneethmuchala" data-width="80" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/shaneethmuchala">
+                            <div class="connect-icon">
+                                <i class="fa-instagram"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/shaneethmuchala">
+                            <div class="connect-icon">
+                                <i class="fa-twitter-square"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://plus.google.com/111620520778342395596/posts">
+                            <div class="connect-icon">
+                                <i class="fa-google-plus-square"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="watermark">
+                    <span class="text">
+                        Copyright © 2014 Shaneeth
+                    </span>
+                </div>
+            </section>
             <!-- ENd connect me -->
         </div>
         <!-- End content wrapper -->
@@ -152,6 +240,17 @@
                     </div>
                 </li>
             </ul>
+            <div class="action-btns">
+                <div class="each-btn">
+                    <div class="share-btn fb-share-button" data-href="http://shaneeth.com" data-layout="button_count"></div>
+                </div>
+                <div class="each-btn">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://shaneeth.com" data-via="shaneethmuchala">Tweet</a>
+                </div>
+                <div class="each-btn">
+                    <div class="g-plusone" data-size="medium"></div>
+                </div>
+            </div>
         </nav>
         <!-- End menu -->
     </body>
