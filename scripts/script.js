@@ -4,7 +4,9 @@ $(document).ready(function() {
     htmlBody.animate({
         scrollTop: 0
     }, 1000, 'easeOutQuad');
-
+    $('body').animate({
+        opacity: 1
+    }, 600, 'easeInQuint');
     /*
      *  Scripts related to menus
      */
@@ -89,14 +91,18 @@ $(document).ready(function() {
     /*
      *  Scripts related to Magnific popup
      */
-    $('.work-link').magnificPopup({
-        disableOn: 700,
+    $(".work-link").magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
         fixedContentPos: false
+    })
+    /*
+     * Scripts related to connect
+     */
+    $('.ext-link').on('click', function() {
+        $(location).attr('href', $(this).attr('href'));
     });
-
 
 });

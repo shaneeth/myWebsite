@@ -13,6 +13,13 @@
         <link rel="shortcut icon" href="images/myIcon.ico">
 
         <!-- Start style tags -->
+        <style rel="stylesheet" type="text/css">
+            body {
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+        </style>
         <link rel="stylesheet" type="text/css" href="styles/external/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styles/external/magnific-popup.css">
         <link rel="stylesheet/less" type="text/css" href="styles/style.less">
@@ -106,20 +113,21 @@
                 </p>
                 <div class="hobbies">
                     <div class="hobbies-in hobby-movie" hobby-target=".movie-desc"></div>
+                    <div class="hobbies-in hobby-travel" hobby-target=".travel-desc"></div>
+                    <div class="hobbies-in hobby-think" hobby-target=".think-desc"></div>
                     <div class="hobbies-desc movie-desc">
                         Hobby - Movie
                     </div>
-                    <div class="hobbies-in hobby-travel" hobby-target=".travel-desc"></div>
                     <div class="hobbies-desc travel-desc travel-desc-left">
                         Travel - Movie
                     </div>
                     <div class="hobbies-desc travel-desc travel-desc-right">
                         Travel - Movie - Description
                     </div>
-                    <div class="hobbies-in hobby-think" hobby-target=".think-desc"></div>
                     <div class="hobbies-desc think-desc">
                         Think - Movie
                     </div>
+
                 </div>
             </section>
             <!-- End about me -->
@@ -131,15 +139,27 @@
                     <li class="work work-odd work-link" href="https://www.youtube.com/watch?v=uit1amuX1Oo">
                         <div class="work-vid" style="background: url('images/video-icons/1.png')  no-repeat scroll top left / 350px 150px rgba(0, 0, 0, 0);"></div>
                         <div class="work-desc">
-                            <h2>Video 1</h2>
-                            <p>About the video 1</p>
+                            <h2>DESTO</h2>
+                            <p>A sample video did for my friend.</p>
                         </div>
                     </li>
                     <li class="work work-even work-link" href="https://www.youtube.com/watch?v=n9leuyxaK8w">
                         <div class="work-vid" style="background: url('images/video-icons/2.png')  no-repeat scroll top right / 350px 150px rgba(0, 0, 0, 0);"></div>
                         <div class="work-desc">
-                            <h2>Video 2</h2>
-                            <p>About the video 2</p>
+                            <h2>Creative Arts and Designs</h2>
+                            <p>
+                                Created this video during college days for CAD students club.<br>
+                                Did using green matte.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="work work-odd work-link" href="https://www.youtube.com/watch?v=f4UnMQpyxk0">
+                        <div class="work-vid" style="background: url('images/video-icons/3.png')  no-repeat scroll top left / 350px 150px rgba(0, 0, 0, 0);"></div>
+                        <div class="work-desc">
+                            <h2>Behind screens</h2>
+                            <p>
+                                Making video of Creative Arts and Designs.
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -150,41 +170,39 @@
             <section id="connect-me">
                 <h1 class="title">Connect me</h1>
                 <ul class="connect-ref">
-                    <li>
-                        <a href="http://www.facebook.com/shaneethmuchala">
-                            <div class="connect-icon">
-                                <i class="fa-facebook-square"></i>
-                                <div class="ext-details">
-                                    <div class="fb-like" data-href="https://www.facebook.com/shaneethmuchala" data-width="80" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                                </div>
+                    <li class="ext-link" href="http://www.facebook.com/shaneethmuchala">
+                        <div class="connect-icon">
+                            <i class="fa-facebook-square"></i>
+                            <div class="ext-details ext-f-like">
+                                <div class="fb-like" data-href="https://www.facebook.com/shaneethmuchala" data-width="80" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             </div>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="http://instagram.com/shaneethmuchala">
-                            <div class="connect-icon">
-                                <i class="fa-instagram"></i>
-                            </div>
-                        </a>
+                    <li class="ext-link" href="http://instagram.com/shaneethmuchala">
+                        <div class="connect-icon">
+                            <i class="fa-instagram"></i>
+                        </div>
                     </li>
-                    <li>
-                        <a href="http://twitter.com/shaneethmuchala">
-                            <div class="connect-icon">
-                                <i class="fa-twitter-square"></i>
+                    <li class="ext-link" href="http://twitter.com/shaneethmuchala">
+                        <div class="connect-icon">
+                            <i class="fa-twitter-square"></i>
+                            <div class="ext-details">
+                                <a href="https://twitter.com/ShaneethMuchala" class="twitter-follow-button" data-show-count="false">Follow @ShaneethMuchala</a>
                             </div>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="http://plus.google.com/111620520778342395596/posts">
-                            <div class="connect-icon">
-                                <i class="fa-google-plus-square"></i>
+                    <li class="ext-link" href="http://plus.google.com/111620520778342395596/posts">
+                        <div class="connect-icon">
+                            <i class="fa-google-plus-square"></i>
+                            <div class="ext-details">
+                                <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/111620520778342395596" data-rel="author"></div>
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
                 <div class="watermark">
                     <span class="text">
-                        Copyright © 2014 Shaneeth
+                        Copyright © 2014 - Shaneeth &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="https://github.com/shaneeth/myWebsite">Github</a>
                     </span>
                 </div>
             </section>
@@ -242,13 +260,13 @@
             </ul>
             <div class="action-btns">
                 <div class="each-btn">
-                    <div class="share-btn fb-share-button" data-href="http://shaneeth.com" data-layout="button_count"></div>
-                </div>
-                <div class="each-btn">
                     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://shaneeth.com" data-via="shaneethmuchala">Tweet</a>
                 </div>
                 <div class="each-btn">
-                    <div class="g-plusone" data-size="medium"></div>
+                    <div class="share-btn fb-share-button" data-href="http://shaneeth.com" data-layout="button_count"></div>
+                </div>
+                <div class="each-btn">
+                    <div class="g-plus" data-action="share" data-annotation="bubble" data-href="https://shaneeth.com"></div>
                 </div>
             </div>
         </nav>
