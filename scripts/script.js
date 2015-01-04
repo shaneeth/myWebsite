@@ -69,9 +69,27 @@ $(document).ready(function() {
     });
 
     /*
+     * Scripts related to Hobbies
+     */
+    $(".hobbies .hobbies-in").on('mouseenter', function() {
+        if($(this).attr('hobby-target')) {
+            $(this).siblings($(this).attr('hobby-target')).animate({
+                opacity: 1,
+                zIndex: 1
+            }, 500, 'easeOutQuint');
+        }
+    }).on('mouseleave', function() {
+        if($(this).attr('hobby-target')) {
+            $(this).siblings($(this).attr('hobby-target')).animate({
+                opacity: 0,
+                zIndex: 0
+            }, 100, 'easeInQuint');
+        }
+    });
+    /*
      *  Scripts related to Magnific popup
      */
-    $('a.work-link').magnificPopup({
+    $('.work-link').magnificPopup({
         disableOn: 700,
         type: 'iframe',
         mainClass: 'mfp-fade',
