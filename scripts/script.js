@@ -46,13 +46,13 @@ $(document).ready(function() {
      */
     function selectMenuOnScroll() {
         tempActiveMenu = navMenus[0];
-        if($(this).scrollTop()+200 > aboutElem.offset().top) {
+        if($(this).scrollTop()+600 > aboutElem.offset().top) {
             tempActiveMenu = navMenus[1];
         }
-        if($(this).scrollTop()+200 > worksElem.offset().top) {
+        if($(this).scrollTop()+600 > worksElem.offset().top) {
             tempActiveMenu = navMenus[2];
         }
-        if($(this).scrollTop()+200 > connectElem.offset().top) {
+        if($(this).scrollTop()+600 > connectElem.offset().top) {
             tempActiveMenu = navMenus[3];
         }
         setActiveMenu(tempActiveMenu);
