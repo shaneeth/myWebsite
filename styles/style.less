@@ -1,3 +1,4 @@
+/* Variables */
 @color-white: #FFFFFF;
 @color-lite-1: #F4F4F4;
 @color-lite-2: #E9E9E9;
@@ -7,10 +8,18 @@
 
 @font-family-1: "comic sans ms";
 @font-size-20: 20px;
+@font-size-30: 30px;
 
 @min-width: 1024px;
 
 @import "animations";
+
+/* common functions */
+.opacity(@val) {
+  -moz-opacity: @val;
+  -khtml-opacity: @val;
+  opacity: @val;
+}
 
 body {
   margin: 0px;
@@ -21,8 +30,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+p {
+  margin: 0px;
+}
+div, p {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
 nav.menu {
-  padding: 10px 0 0 0;
+  padding: 0;
   width: 100%;
   min-width: @min-width;
   position: fixed;
@@ -43,46 +60,70 @@ nav.menu {
       font-family: @font-family-1;
       font-size: @font-size-20;
       color: @color-lite-3;
-					.emenu {
-							width: 100%;
-							height: 100%;
-							position: relative;
-         text-align: center;
-         display: inline-block;
-         .lite {
-           padding: 10px 1%;
-           width: 98%;
-           position: absolute;
-           bottom: 0px;
-           background-color: @color-lite-2;
-           z-index: 1;
-         }
-         .dark {
-           .lite;
-           background-color: @color-dark-1;
-           color: @color-lite-1;
-           z-index: 2;
-           display: none;
-         }
-         .icon {
-           width: 100%;
-           border-bottom: 5px solid @color-lite-2;
-           position: absolute;
-           top: 50px;
-           left: 0px;
-           z-index: 0;
-         }
-					
-					}
-      .active {
+      .emenu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        display: inline-block;
         .lite {
-          display: none;  
+          padding: 5px 0px;
+          width: 100%;
+          height: 55px;
+          position: absolute;
+          bottom: -5px;
+          background-color: @color-lite-2;
+          border-top: 15px solid @color-lite-1;
+          z-index: 1;
         }
         .dark {
-          display: block;
+          padding: 0px;
+          width: 100%;
+          height: 0px;
+          position: absolute;
+          bottom: -5px;
+          background-color: @color-dark-1;
+          color: @color-lite-1;
+          z-index: 2;
+          overflow: hidden;
+          .transition(height 0.5s ease);
+          .dark-in {
+            padding: 5px 0px;
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            bottom: 0px;
+          }
         }
         .icon {
-          top: -5px;
+          width: 100%;
+          height: 35px;
+          border-bottom: 5px solid @color-lite-2;
+          position: absolute;
+          top: 50px;
+          left: 0px;
+          z-index: 0;
+          .transition(top 0.5s ease);
+        }
+        .icon-home {
+          background: url("../images/menuIconHome.png")  no-repeat scroll center / 35px auto rgba(0, 0, 0, 0);
+        }
+        .icon-about-me {
+          .icon-home;
+        }
+        .icon-works {
+          .icon-home;
+        }
+        .icon-connect {
+          .icon-home;
+        }
+      }
+      .active {
+        .dark {
+          height: 40px;
+        }
+        .icon {
+          top: -35px;
         }
       }
     }
@@ -93,7 +134,7 @@ header.top {
   height: 0px;
   background-color: #11A7DC;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   .head-face {
     width: 180px;
     height: 98px;
@@ -106,7 +147,7 @@ header.top {
       position: absolute;
       top: 0px;
       left: 25px;
-      .animation(BlogFace, 5s, infinite);
+      .animation(BlogFace, 5s, infinite, ease);
       .eyes-wrap {
         position: relative;
         .eye-fun {
@@ -129,35 +170,230 @@ header.top {
       }
     }
     .blog-face {
-      background: url("../images/blogFace.png")  no-repeat scroll left top / 180px auto rgba(0, 0, 0, 0);
       width: 100%;
       height: 100%;
       position: relative;
       z-index: 1;
+      font-family: @font-family-1;
+      font-size: @font-size-20;
+      color: @color-lite-3;
+      text-align: center;
+      background: url("../images/blogFace.png")  no-repeat scroll left top / 180px auto rgba(0, 0, 0, 0);
+      a {
+        position: relative;
+        top: 40px;
+      }
     }
   }
 }
 
 .content {
   position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 #landing {
   width: 100%;
-  height: 800px;
-  background-color: @color-lite-1;
+  height: 620px;
+  background-color: @color-white;
+  position: relative;
+  .clouds-logo {
+    height: 15%;
+    width: 30%;
+    position: absolute;
+    top: 2.5%;
+    left: -50px;
+    .animation(CloudLogo, 30s, infinite, ease);
+    .cloud-bg-1 {
+      background: url("../images/cloud1.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    }
+    .cloud-bg-2 {
+      background: url("../images/cloud2.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    }
+    .cloud1 {
+      height: 50px;
+      width: 160px;
+      position: absolute;
+      bottom: 0px;
+      left: 80px;
+      z-index: 4;
+    }
+    .cloud2 {
+      height: 80px;
+      width: 200px;
+      position: absolute;
+      bottom: 5px;
+      left: 80px;
+      z-index: 0;
+      .opacity(0.7);
+    }
+    .cloud3 {
+      height: 40px;
+      width: 140px;
+      position: absolute;
+      bottom: 10px;
+      left: -10px;
+      z-index: 2;
+    }
+    .cloud4 {
+      height: 40px;
+      width: 140px;
+      position: absolute;
+      bottom: 10px;
+      left: 220px;
+      z-index: 3;
+    }
+    .logo {
+      padding-left: 60px;
+      height: 50px;
+      position: absolute;
+      left: 120px;
+      bottom: 35px;
+      line-height: 60px;
+      z-index: 1;
+      color: @color-dark-1;
+      font-family: @font-family-1;
+      font-size: @font-size-30;
+      background: url("../images/myIcon.png")  no-repeat scroll left top / 40px auto rgba(0, 0, 0, 0);
+    }
+  }
+  .birds-fly {
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    .animation(BirdsFly, 60s, infinite, linear);
+    .bird-bg {
+      background: url("../images/flyBird.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    }
+    .bird1 {
+      height: 30%;
+      width: 45%;
+      .bird-bg;
+      position: absolute;
+      top: 35%;
+      left: 0;
+    }
+    .bird2 {
+      height: 50%;
+      width: 70%;
+      .bird-bg;
+      position: absolute;
+      top: 5%;
+      left: 30%;
+    }
+    .bird3 {
+      height: 30%;
+      width: 45%;
+      .bird-bg;
+      position: absolute;
+      top: 55%;
+      left: 45%;
+    }
+  }
+  .my-ship {
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    bottom: 15%;
+    right: 7%;
+    z-index: 1;
+    background: url("../images/myShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    .animation(MyShip, 80s, infinite, linear);
+  }
+  .chooky-ship {
+    height: 270px;
+    width: 160px;
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    z-index: 1;
+    background: url("../images/chookyShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    .animation(ChookyShip, 10s, infinite, linear)
+  }
+  .dhooky-ship {
+    height: 440px;
+    width: 250px;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    z-index: 1;
+    background: url("../images/dhookyShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    .animation(DhookyShip, 15s, infinite, linear, 3s)
+  }
+  .ehooky-ship {
+    height: 160px;
+    width: 120px;
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+    z-index: 1;
+    background: url("../images/ehookyShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
+    .animation(EhookyShip, 6s, infinite, linear, 6s)
+  }
+  .hill-back-bg {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 40%;
+    left: 0px;
+    background: url("../images/hillBack.png")  no-repeat scroll -60px top / 1477px auto rgba(0, 0, 0, 0);
+  }
+  .hill-front-left {
+    width: 520px;
+    height: 20%;
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+    background: url("../images/hillFrontLeft.png")  no-repeat scroll left top / 520px auto rgba(0, 0, 0, 0);
+  }
+  .hill-front-right {
+    width: 570px;
+    height: 20%;
+    position: absolute;
+    right: -5%;
+    bottom: 0;
+    background: url("../images/hillFrontRight.png")  no-repeat scroll left top / 570px auto rgba(0, 0, 0, 0);
+  }
+  .sea-bg {
+    height: 40%;
+    width: 100%;
+    background-color: @color-dark-1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    .opacity(0.7);
+  }
 }
 #about-me {
   width: 100%;
-  height: 800px;
-  background-color: @color-dark-2; 
+  #my-photos-slider {
+    width: 100%;
+    height: 368px;
+    background-color: @color-lite-2;
+    img{
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .description {
+    width: 100%;
+    padding: 20px;
+    background-color: @color-lite-1;
+    color: @color-lite-3;
+    font-family: @font-family-1;
+    font-size: @font-size-20;
+    text-align: justify;
+  }
 }
 #my-works {
   width: 100%;
   height: 800px;
-  background-color: @color-lite-3;
+  background-color: blue;
 }
 #connect-me {
   width: 100%;
   height: 800px;
-  background-color: @color-lite-2;    
+  background-color: yellow;
 }

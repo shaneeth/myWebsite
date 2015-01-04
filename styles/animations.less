@@ -2,14 +2,27 @@
  *  Animations, Keyframes
  */
 //Functions
-.animation(@name, @time, @repeat) {
-  -webkit-animation: @name @time @repeat;
-  -moz-animation: @name @time @repeat ease;
-  -o-animation: @name @time @repeat ease;
-  animation: @name @time @repeat ease;
+.animation(@name, @time, @repeat, @ease, @delay:0s) {
+  -webkit-animation: @name @time @repeat @ease @delay;
+  -moz-animation: @name @time @repeat @ease @delay;
+  -o-animation: @name @time @repeat @ease @delay;
+  animation: @name @time @repeat @ease @delay;
+}
+.transition(@options) {
+  -webkit-transition: @options;
+  -moz-transition: @options;
+  -o-transition: @options;
+  transition: @options;
+}
+.rotate(@val) {
+  -webkit-transform: rotate(@val);
+  -moz-transform: rotate(@val);
+  -o-transform: rotate(@val);
+  -ms-transform: rotate(@val);
+  transform: rotate(@val);
 }
 //Blog face
-.blog-face-anim {
+.blog-face-anim() {
   0% {
     left: 25px;
   }
@@ -33,3 +46,173 @@
 @-moz-keyframes BlogFace {.blog-face-anim;}
 @-o-keyframes BlogFace {.blog-face-anim;}
 @keyframes BlogFace {.blog-face-anim;}
+//Cloud logo
+.cloud-logo-anim() {
+  10% {
+    left: -50px;
+  }
+  40% {
+    left: 200px;
+  }
+  60% {
+    left: 200px;
+  }
+  90% {
+    left: -50px;
+  }
+}
+@-webkit-keyframes CloudLogo {.cloud-logo-anim;}
+@-moz-keyframes CloudLogo {.cloud-logo-anim;}
+@-o-keyframes CloudLogo {.cloud-logo-anim;}
+@keyframes CloudLogo {.cloud-logo-anim;}
+//Birds fly
+.birds-fly-anim() {
+  0% {
+    top: 150px;
+    right: -30px;
+    height: 20px;
+    width: 30px;
+  }
+  50% {
+    top: 50px;
+    right: 350px;
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    top: -30px;
+    right: 800px;
+    height: 10px;
+    width: 20px;
+  }
+}
+@-webkit-keyframes BirdsFly {.birds-fly-anim;}
+@-moz-keyframes BirdsFly {.birds-fly-anim;}
+@-o-keyframes BirdsFly {.birds-fly-anim;}
+@keyframes BirdsFly {.birds-fly-anim;}
+//My ship
+.my-ship-anim() {
+  0% {
+    right: 7%;
+    .rotate(0deg);
+  }
+  40% {
+    right: 7%;
+    .rotate(0deg);
+  }
+  60% {
+    right: 10%;
+    .rotate(3deg);
+  }
+  80% {
+    right: 10%;
+    .rotate(-3deg);
+  }
+  100% {
+    right: 7%;
+    .rotate(0deg);
+  }
+}
+@-webkit-keyframes MyShip {.my-ship-anim;}
+@-moz-keyframes MyShip {.my-ship-anim;}
+@-o-keyframes MyShip {.my-ship-anim;}
+@keyframes MyShip {.my-ship-anim;}
+//Chooky ship
+.chooky-ship-anim() {
+  0% {
+    bottom: 25%;
+    .rotate(0deg);
+  }
+  30% {
+    .rotate(0deg);
+  }
+  40% {
+    bottom: 25%;
+    .rotate(2deg);
+  }
+  50% {
+    bottom: 27.5%;
+    .rotate(0deg);
+  }
+  60% {
+    bottom: 25%;
+    .rotate(-2deg);
+  }
+  70% {
+    .rotate(0deg);
+  }
+  100% {
+    bottom: 25%;
+    .rotate(0deg);
+  }
+}
+@-webkit-keyframes ChookyShip {.chooky-ship-anim;}
+@-moz-keyframes ChookyShip {.chooky-ship-anim;}
+@-o-keyframes ChookyShip {.chooky-ship-anim;}
+@keyframes ChookyShip {.chooky-ship-anim;}
+//Dhooky ship
+.dhooky-ship-anim() {
+  0% {
+    bottom: 10%;
+    .rotate(0deg);
+  }
+  30% {
+    .rotate(0deg);
+  }
+  40% {
+    bottom: 10%;
+    .rotate(-2deg);
+  }
+  50% {
+    bottom: 12.5%;
+    .rotate(0deg);
+  }
+  60% {
+    bottom: 10%;
+    .rotate(2deg);
+  }
+  70% {
+    .rotate(0deg);
+  }
+  100% {
+    bottom: 10%;
+    .rotate(0deg);
+  }
+}
+@-webkit-keyframes DhookyShip {.dhooky-ship-anim;}
+@-moz-keyframes DhookyShip {.dhooky-ship-anim;}
+@-o-keyframes DhookyShip {.dhooky-ship-anim;}
+@keyframes DhookyShip {.dhooky-ship-anim;}
+//Ehooky ship
+.ehooky-ship-anim() {
+  0% {
+    bottom: 35%;
+    .rotate(0deg);
+  }
+  30% {
+    .rotate(0deg);
+  }
+  40% {
+    bottom: 35%;
+    .rotate(1deg);
+  }
+  50% {
+    bottom:36.5%;
+    .rotate(0deg);
+  }
+  60% {
+    bottom: 35%;
+    .rotate(-1deg);
+  }
+  70% {
+    .rotate(0deg);
+  }
+  100% {
+    bottom: 35%;
+    .rotate(0deg);
+  }
+}
+@-webkit-keyframes EhookyShip {.ehooky-ship-anim;}
+@-moz-keyframes EhookyShip {.ehooky-ship-anim;}
+@-o-keyframes EhookyShip {.ehooky-ship-anim;}
+@keyframes EhookyShip {.ehooky-ship-anim;}
