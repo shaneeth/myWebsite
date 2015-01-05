@@ -49,10 +49,6 @@ div, p {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
 }
-i{
-  font-family: FontAwesome;
-  font-style: normal;
-}
 h1.title {
   margin: 30px 20px;
   font-family: @font-family-1;
@@ -489,10 +485,10 @@ header.top {
   }
 }
 #my-works {
-  padding: 20px 0px;
+  padding: 30px 0px 20px;
   width: 100%;
   .work-wrap {
-    padding: 0px;
+    padding: 20px 0px 0px 0px;
     margin: 0px;
     list-style: none;
     .work {
@@ -603,58 +599,54 @@ header.top {
   padding: 20px 0px;
   width: 100%;
   .connect-ref{
-    padding: 20px;
+    padding: 30px 20px;
     margin: 0px;
     list-style: none;
     width: 100%;
-    height: 200px;
+    height: 256px;
     li {
       width: 25%;
       height: 100%;
       float: left;
       text-align: center;
-      font-size: 250px;
       .connect-icon {
-        height: 218px;
-        display: inline-block;
-        position: relative;
-        color: @color-dark-1;
-        .transition(color 0.5s ease);
+        height: 256px;
+        width: 256px;
+        display: table;
+        margin: 0px auto;
+        padding: 40px 0px;
         cursor: pointer;
-        i {
-          position: relative;
-          top: -33px;
-        }
         .ext-details {
           padding: 10px;
-          margin-left: -5%;
-          margin-top: 30px;
-          width: 110%;
-          height: 70%;
           background-color: @color-lite-2;
+          display: table-cell;
+          vertical-align: middle;
           .opacity(0);
           .transition(opacity 0.5s ease);
-          position: absolute;
-          top: -2px;
-          left: 0px;
-          line-height: 0px;
-        }
-        .ext-f-like {
-          line-height: 100px;
         }
         &:hover {
-          color: @color-lite-3;
           .ext-details {
             .opacity(0.95);
           }
         }
       }
-
+      .connect-facebook {
+        background: url("../images/icon-facebook.png")  no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+      }
+      .connect-instagram {
+        background: url("../images/icon-instagram.png")  no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+      }
+      .connect-twitter {
+        background: url("../images/icon-twitter.png")  no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+      }
+      .connect-google {
+        background: url("../images/icon-google.png")  no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+      }
     }
   }
   .watermark {
     padding: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
     width: 100%;
     text-align: center;

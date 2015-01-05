@@ -67,7 +67,8 @@ $(document).ready(function() {
     var fluxSlider = new flux.slider("#my-photos-slider", {
         autoplay: true,
         pagination: false,
-        delay: 5000
+        delay: 5000,
+        transitions: ["bars", "blinds", "blocks", "blocks2", "concentric", "dissolve", "slide", "warp", "zip"]
     });
 
     /*

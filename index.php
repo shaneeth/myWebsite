@@ -20,7 +20,6 @@
                 opacity: 0;
             }
         </style>
-        <link rel="stylesheet" type="text/css" href="styles/external/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styles/external/magnific-popup.css">
         <link rel="stylesheet/less" type="text/css" href="styles/style.less">
         <!-- End style tags-->
@@ -171,29 +170,24 @@
                 <h1 class="title">Connect me</h1>
                 <ul class="connect-ref">
                     <li class="ext-link" href="http://www.facebook.com/shaneethmuchala">
-                        <div class="connect-icon">
-                            <i class="fa-facebook-square"></i>
-                            <div class="ext-details ext-f-like">
+                        <div class="connect-icon connect-facebook">
+                            <div class="ext-details">
                                 <div class="fb-like" data-href="https://www.facebook.com/shaneethmuchala" data-width="80" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             </div>
                         </div>
                     </li>
                     <li class="ext-link" href="http://instagram.com/shaneethmuchala">
-                        <div class="connect-icon">
-                            <i class="fa-instagram"></i>
-                        </div>
+                        <div class="connect-icon connect-instagram"></div>
                     </li>
                     <li class="ext-link" href="http://twitter.com/shaneethmuchala">
-                        <div class="connect-icon">
-                            <i class="fa-twitter-square"></i>
+                        <div class="connect-icon connect-twitter">
                             <div class="ext-details">
                                 <a href="https://twitter.com/ShaneethMuchala" class="twitter-follow-button" data-show-count="false">Follow @ShaneethMuchala</a>
                             </div>
                         </div>
                     </li>
                     <li class="ext-link" href="http://plus.google.com/111620520778342395596/posts">
-                        <div class="connect-icon">
-                            <i class="fa-google-plus-square"></i>
+                        <div class="connect-icon connect-google">
                             <div class="ext-details">
                                 <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/111620520778342395596" data-rel="author"></div>
                             </div>
