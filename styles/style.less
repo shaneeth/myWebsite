@@ -18,6 +18,7 @@
 @font-size-16: 22px;
 @font-size-18: 24px;
 @font-size-20: 26px;
+@font-size-28: 30px;
 @font-size-30: 36px;
 
 @min-width: 1170px;
@@ -67,7 +68,7 @@ nav.menu {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: @color-lite-1;
+    background-color: @color-lite-3;
     list-style: none;
     li {
       padding: 0px 50px;
@@ -91,7 +92,7 @@ nav.menu {
           position: absolute;
           bottom: -5px;
           background-color: @color-lite-2;
-          border-top: 15px solid @color-lite-1;
+          border-top: 15px solid @color-lite-3;
           z-index: 1;
         }
         .dark {
@@ -100,7 +101,7 @@ nav.menu {
           height: 0px;
           position: absolute;
           bottom: -5px;
-          background-color: @color-dark-1;
+          background-color: @color-dark-2;
           color: @color-lite-1;
           z-index: 2;
           overflow: hidden;
@@ -116,7 +117,7 @@ nav.menu {
         .icon {
           width: 100%;
           height: 35px;
-          border-bottom: 5px solid @color-lite-2;
+          border-bottom: 5px solid @color-lite-3;
           position: absolute;
           top: 50px;
           left: 0px;
@@ -414,73 +415,70 @@ header.top {
     background-color: @color-lite-1;
     color: @color-lite-3;
     font-family: @font-family-1;
-    font-size: @font-size-16;
+    font-size: @font-size-28;
     text-align: justify;
-    line-height: 35px;
+    line-height: 50px;
+  }
+  .hobbies-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .hobbies {
     height: 300px;
     width: 100%;
     background-color: @color-dark-1;
     position: relative;
-    &:hover {
-      background-color: @color-dark-2;
-    }
     .hobbies-in {
       float: left;
       width: 33.33%;
       height: 100%;
       cursor: pointer;
       position: relative;
-      z-index: 1;
+      overflow: hidden;
+      .hobbies-desc {
+        padding: 35px;
+        height: 100px;
+        width: 100%;
+        background-color: @color-lite-3;
+        color: @color-lite-1;
+        font-family: @font-family-1;
+        font-size: @font-size-28;
+        text-align: center;
+        position: absolute;
+        top: -100px;
+        left: 0px;
+        z-index: 1;
+        .transition(top 0.5s ease);
+      }
+      &:hover {
+        background-color: @color-dark-2;
+        .hobbies-desc {
+          top: 0px;
+        }
+      }
     }
     .hobby-movie {
       background: url("../images/hobbyMovie.png")  no-repeat scroll center center / 50% auto rgba(0, 0, 0, 0);
+      .transition(background 0.5s ease);
+      &:hover {
+        background-position: center 100px;
+      }
     }
     .hobby-travel {
       background: url("../images/hobbyTravel.png") no-repeat scroll center center / 60% auto rgba(0, 0, 0, 0);
-      background-position: center 60%;
+      background-position: center 80px;
+      .transition(background 0.5s ease);
+      &:hover {
+        background-position: center 110px;
+      }
     }
     .hobby-think {
       background: url("../images/hobbyThinking.png")  no-repeat scroll center center / 50% auto rgba(0, 0, 0, 0);
-      background-position: center 80%;
-    }
-    .hobbies-desc {
-      padding: 20px;
-      background-color: @color-lite-1;
-      color: @color-lite-3;
-      font-family: @font-family-1;
-      font-size: @font-size-20;
-      z-index: 0;
-      .opacity(0);
-    }
-    .movie-desc {
-      height: 100%;
-      width: 66.66%;
-      position: absolute;
-      top: 0px;
-      left: 33.33%;
-    }
-    .travel-desc-left {
-      height: 100%;
-      width: 33.33%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .travel-desc-right {
-      height: 100%;
-      width: 33.33%;
-      position: absolute;
-      top: 0;
-      left: 66.66%;
-    }
-    .think-desc {
-      height: 100%;
-      width: 66.66%;
-      position: absolute;
-      top: 0px;
-      right: 33.33%;
+      background-position: center 160px;
+      .transition(background 0.5s ease);
+      &:hover {
+        background-position: center 190px;
+      }
     }
   }
 }
@@ -670,7 +668,8 @@ header.top {
     .sea-bg {
       height: 50%;
     }
-  } 
+  }
+
   #my-works {
     padding: 1000px 0px 0px;
     .work-wrap {
@@ -678,11 +677,22 @@ header.top {
         margin-top: 150px;
       }
     }
-  }  
+  }
+
   #connect-me {
     padding: 1000px 0px 0px;
-  } 
+    .connect-ref {
+      height: 180px;
+      li {
+        .connect-icon {
+          width: 180px;
+          height: 180px;
+        }
+      }
+    }
+  }
 }
+
 
 
 

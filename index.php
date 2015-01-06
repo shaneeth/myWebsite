@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="blog-face">
-                    <a href="">Blog</a>
+                    <a href="http://blog.shaneeth.com/">Blog</a>
                 </div>
             </div>
             <!-- End head face -->
@@ -108,38 +108,35 @@
                     ?>
                 </div>
                 <p class="description">
-                    I'm very smart and curious about everything. However, I don't like too much noise and chaos and prefer to be alone in a quiet place. Usually I sit upstairs in a small room/ a chair and a TV and just relax and think after school as a sort of "unwinding" time. I'm funny, and I make cracks and jokes about everything, but sometimes I go too far, and I don't really notice it. I can't read people's cues and unspoken rules and whatnot, so "social norms" and "unspoken rules" and things like that are beyond me. I say what I feel about myself, a person, an event, anything and I say it out loud and proud. I don't care if people get offended by my blunt truth, because I believe that people are too sheltered from reality these days. I am constantly criticizing myself, and since I love to write and draw, I'm always editing things, always trying to achieve perfection in everything I do. This makes me a perfectionist and a procrastinator, and if I am assigned a project that says "do anything you want" I'm frozen. I need it to be narrowed down, I can't just go off and do ANYTHING. Give me some limitations, please.
+                    Ellooo there..!.<br><br>
+                    I am <strong>shaneeth</strong>. I am full time <strong>web developer</strong> part time <strong>VFX</strong> enthusiast who is crazy about programming.<br><br>
+                    Sometimes a tiny bit of neurons tingles up in me  resulting in  pure madness like creating this personal memento of things which i did over my lifetime.<br><br>
+                    Also a movie buff, idiosyncratic thinker, light shuttering photographer, wanterlust and an absolute KOOK.
                 </p>
+                <h1 class="title hobbies-title">Obsessions</h1>
                 <div class="hobbies">
-                    <div class="hobbies-in hobby-movie" hobby-target=".movie-desc"></div>
-                    <div class="hobbies-in hobby-travel" hobby-target=".travel-desc"></div>
-                    <div class="hobbies-in hobby-think" hobby-target=".think-desc"></div>
-                    <div class="hobbies-desc movie-desc">
-                        Hobby - Movie
+                    <div class="hobbies-in hobby-movie">
+                        <div class="hobbies-desc">Watching movies</div>
                     </div>
-                    <div class="hobbies-desc travel-desc travel-desc-left">
-                        Travel - Movie
+                    <div class="hobbies-in hobby-travel">
+                        <div class="hobbies-desc">Travelling</div>
                     </div>
-                    <div class="hobbies-desc travel-desc travel-desc-right">
-                        Travel - Movie - Description
+                    <div class="hobbies-in hobby-think">
+                        <div class="hobbies-desc">Thinking</div>
                     </div>
-                    <div class="hobbies-desc think-desc">
-                        Think - Movie
-                    </div>
-
                 </div>
             </section>
             <!-- End about me -->
 
             <!-- Start my works -->
             <section id="my-works">
-                <h1 class="title">My works</h1>
+                <h1 class="title">Project mayhem</h1>
                 <ul class="work-wrap">
                     <li class="work work-odd work-link" href="https://www.youtube.com/watch?v=uit1amuX1Oo">
                         <div class="work-vid" style="background: url('images/video-icons/1.png')  no-repeat scroll top left / 350px 150px rgba(0, 0, 0, 0);"></div>
                         <div class="work-desc">
                             <h2>DESTO</h2>
-                            <p>A sample video did for my friend.</p>
+                            <p>A sample video did for my friend(non commercial - for trial).</p>
                         </div>
                     </li>
                     <li class="work work-even work-link" href="https://www.youtube.com/watch?v=n9leuyxaK8w">
