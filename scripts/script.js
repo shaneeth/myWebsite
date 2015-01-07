@@ -1,5 +1,14 @@
 $(document).ready(function() {
-
+    var adjustHeightOnResize = function(height, width) {
+            $("#landing").css("height", (height-40)+'px');
+            if(width >= 1170) {
+                $("#my-photos-slider").css("height", (315/1170*width) + 'px');
+            }
+        };
+    adjustHeightOnResize($(window).height(), $(window).width());
+    $(window).on('resize', function(event) {
+        adjustHeightOnResize($(this).height(), $(window).width());
+    });
     var htmlBody = $('html, body');
     htmlBody.animate({
         scrollTop: 0
@@ -64,12 +73,21 @@ $(document).ready(function() {
     /*
      *  Scripts related to Photos slider
      */
-    var fluxSlider = new flux.slider("#my-photos-slider", {
-        autoplay: true,
-        pagination: false,
-        delay: 5000,
-        transitions: ["bars", "blinds", "blocks", "blocks2", "concentric", "dissolve", "slide", "warp", "zip"]
-    });
+    var sliderImgs = $("#my-photos-slider > img"), currentImage = 0 , maxImages = sliderImgs.length;
+    $(sliderImgs[currentImage]).css("opacity", "1");
+    function imageChangeSlide() {
+        $(sliderImgs[currentImage]).animate({
+            opacity: 0
+        }, 3000, 'easeInOutExpo');
+        currentImage += 1;
+        if(currentImage >= maxImages)
+            currentImage = 0;
+        $(sliderImgs[currentImage]).animate({
+            opacity: 1
+        }, 3000, 'easeInOutExpo');
+    }
+
+    setInterval(imageChangeSlide, 10000);
 
     /*
      *  Scripts related to Magnific popup

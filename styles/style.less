@@ -227,6 +227,7 @@ header.top {
 }
 #landing {
   width: 100%;
+  min-height: 620px;
   height: 620px;
   position: relative;
   .clouds-logo {
@@ -328,7 +329,7 @@ header.top {
     height: 450px;
     width: 350px;
     position: absolute;
-    bottom: 15%;
+    bottom: 80px;
     right: 7%;
     z-index: 1;
     background: url("../images/myShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
@@ -338,17 +339,17 @@ header.top {
     height: 270px;
     width: 160px;
     position: absolute;
-    bottom: 25%;
+    bottom: 150px;
     left: 10%;
     z-index: 1;
     background: url("../images/chookyShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
-    .animation(ChookyShip, 10s, infinite, linear)
+    .animation(ChookyShip, 15s, infinite, linear)
   }
   .dhooky-ship {
     height: 440px;
     width: 250px;
     position: absolute;
-    bottom: 10%;
+    bottom: 65px;
     left: 20%;
     z-index: 1;
     background: url("../images/dhookyShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
@@ -358,23 +359,23 @@ header.top {
     height: 160px;
     width: 120px;
     position: absolute;
-    bottom: 35%;
+    bottom: 220px;
     left: 35%;
     z-index: 1;
     background: url("../images/ehookyShip.png")  no-repeat scroll left top / 100% auto rgba(0, 0, 0, 0);
-    .animation(EhookyShip, 6s, infinite, linear, 6s)
+    .animation(EhookyShip, 12s, infinite, linear, 5s)
   }
   .hill-back-bg {
-    height: 10%;
+    height: 60px;
     width: 100%;
     position: absolute;
-    bottom: 40%;
+    bottom: 250px;
     left: 0px;
     background: url("../images/hillBack.png")  no-repeat scroll -60px top / 1477px auto rgba(0, 0, 0, 0);
   }
   .hill-front-left {
     width: 520px;
-    height: 20%;
+    height: 125px;
     position: absolute;
     left: -5%;
     bottom: 0;
@@ -382,14 +383,14 @@ header.top {
   }
   .hill-front-right {
     width: 570px;
-    height: 20%;
+    height: 125px;
     position: absolute;
     right: -5%;
     bottom: 0;
     background: url("../images/hillFrontRight.png")  no-repeat scroll left top / 570px auto rgba(0, 0, 0, 0);
   }
   .sea-bg {
-    height: 40%;
+    height: 250px;
     width: 100%;
     background-color: @color-dark-1;
     position: absolute;
@@ -401,12 +402,18 @@ header.top {
 #about-me {
   width: 100%;
   #my-photos-slider {
+    min-width: @min-width;
+    min-height: 315px;
     width: 100%;
-    height: 368px;
     background-color: @color-lite-2;
+    position: relative;
     img{
       width: 100% !important;
       height: 100% !important;
+      .opacity(0);
+      position: absolute;
+      top: 0px;
+      left: 0px;
     }
   }
   .description {
@@ -432,7 +439,6 @@ header.top {
       float: left;
       width: 33.33%;
       height: 100%;
-      cursor: pointer;
       position: relative;
       overflow: hidden;
       .hobbies-desc {
@@ -656,20 +662,6 @@ header.top {
 }
 
 @media only screen and(max-device-width: 480px) {
-  #landing {
-    height: 1800px;
-    .hill-back-bg {
-      height: 7%;
-      bottom: 45%;
-    }
-    .hill-front-left, .hill-front-right {
-      height: 7%;
-    }
-    .sea-bg {
-      height: 50%;
-    }
-  }
-
   #my-works {
     padding: 1000px 0px 0px;
     .work-wrap {
