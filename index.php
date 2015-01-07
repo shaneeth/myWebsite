@@ -9,6 +9,14 @@
             connect, profile, about, me, about me, works, my, my works, chooky, dhooky, ehooky, no, meaning, just, madness, etc">
         <!-- End meta tags -->
 
+        <!-- for Facebook -->
+        <meta property="og:title" content="Shaneeth" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="/images/shareImage.png" />
+        <meta property="og:url" content="shaneeth.com" />
+        <meta property="og:description" content="Shaneeth's Chooky Dhooky Ehooky No Meaning Just Madness.\n
+            My personal website.\n Showcase the works done by me & connect me links." />
+
         <title>Shaneeth - Personal Website</title>
         <link rel="shortcut icon" href="images/myIcon.ico">
 
