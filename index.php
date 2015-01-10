@@ -102,9 +102,9 @@
                 </div>
                 <p class="description">
                     Ellooo there..!.<br><br>
-                    I am <strong>shaneeth</strong>. I am full time <strong>web developer</strong> part time <strong>VFX</strong> enthusiast who is crazy about programming.<br><br>
+                    I am <strong>Shaneeth</strong>. I am full time <strong>web developer</strong> part time <strong>VFX</strong> enthusiast who is crazy about programming.<br><br>
                     Sometimes a tiny bit of neurons tingles up in me  resulting in  pure madness like creating this personal memento of things which i did over my lifetime.<br><br>
-                    Also a movie buff, idiosyncratic thinker, light shuttering photographer, wanterlust and an absolute KOOK.
+                    Also a movie buff, idiosyncratic thinker, light shuttering photographer, wanderlust and an absolute KOOK.
                 </p>
                 <h1 class="title hobbies-title">Obsessions</h1>
                 <div class="hobbies">
@@ -126,14 +126,14 @@
                 <h1 class="title">Project mayhem</h1>
                 <ul class="work-wrap">
                     <li class="work work-odd work-link" href="https://www.youtube.com/watch?v=uit1amuX1Oo">
-                        <div class="work-vid" style="background: url('images/video-icons/1.png')  no-repeat scroll top left / 350px 150px rgba(0, 0, 0, 0);"></div>
+                        <div class="work-vid" style="background-image: url('images/video-icons/1.png');"></div>
                         <div class="work-desc">
                             <h2>DESTO</h2>
                             <p>A sample video did for my friend(non commercial - for trial).</p>
                         </div>
                     </li>
                     <li class="work work-even work-link" href="https://www.youtube.com/watch?v=n9leuyxaK8w">
-                        <div class="work-vid" style="background: url('images/video-icons/2.png')  no-repeat scroll top right / 350px 150px rgba(0, 0, 0, 0);"></div>
+                        <div class="work-vid work-vid-right" style="background-image: url('images/video-icons/2.png');"></div>
                         <div class="work-desc">
                             <h2>Creative Arts and Designs</h2>
                             <p>
@@ -143,7 +143,7 @@
                         </div>
                     </li>
                     <li class="work work-odd work-link" href="https://www.youtube.com/watch?v=f4UnMQpyxk0">
-                        <div class="work-vid" style="background: url('images/video-icons/3.png')  no-repeat scroll top left / 350px 150px rgba(0, 0, 0, 0);"></div>
+                        <div class="work-vid work-vid-left" style="background-image: url('images/video-icons/3.png');"></div>
                         <div class="work-desc">
                             <h2>Behind screens</h2>
                             <p>
