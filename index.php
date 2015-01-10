@@ -36,7 +36,6 @@
         <script type="text/javascript" src="scripts/external/less.min.js"></script>
         <script type="text/javascript" src="scripts/external/jQuery.min.js"></script>
         <script type="text/javascript" src="scripts/external/jquery-ui.js"></script>
-        <script type="text/javascript" src="scripts/external/flux.min.js"></script>
         <script type="text/javascript" src="scripts/external/magnific.popup.min.js"></script>
         <script type="text/javascript" src="scripts/script.js"></script>
         <!-- End scripts tags -->
