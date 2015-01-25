@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="blog-face">
-                    <a href="http://blog.shaneeth.com/">Blog</a>
+                    <a class="link"href="http://blog.shaneeth.com/">Blog</a>
                 </div>
             </div>
             <!-- End head face -->
@@ -185,7 +185,7 @@
                 </ul>
                 <div class="watermark">
                     <span class="text">
-                        Copyright © 2014 - Shaneeth &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="https://github.com/shaneeth/myWebsite">Github</a>
+                        Copyright © 2014 - Shaneeth &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a class="link" href="https://github.com/shaneeth/myWebsite">Github</a>
                     </span>
                 </div>
             </section>
